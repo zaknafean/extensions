@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=3 uid="uid://cnkscrmf75iht"]
+
+[ext_resource type="FontFile" uid="uid://cc4xli25271fd" path="res://addons/dialogic/Example Assets/Fonts/Roboto-Bold.ttf" id="1_4aisl"]
+[ext_resource type="Script" uid="uid://btx6a8gb6y8w1" path="res://addons/dialogic_additions/TimedChoice/ExampleTimerBarScenes/timed_defaultbar.gd" id="2_spqxn"]
+[ext_resource type="Texture2D" uid="uid://c16fcia0t108o" path="res://addons/dialogic_additions/TimedChoice/ExampleTimerBarScenes/hourglass.svg" id="3_t3m86"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e1ovg"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0, 0, 0, 0.584314)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_erqby"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+
+[node name="TimerBar" type="ProgressBar"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 224.0
+offset_top = -141.0
+offset_right = 254.0
+offset_bottom = 159.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("1_4aisl")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/background = SubResource("StyleBoxFlat_e1ovg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_erqby")
+max_value = 10.0
+value = 2.0
+fill_mode = 3
+show_percentage = false
+script = ExtResource("2_spqxn")
+
+[node name="TimerIcon" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -17.0
+offset_top = 298.0
+offset_right = 47.0
+offset_bottom = 362.0
+size_flags_vertical = 4
+texture = ExtResource("3_t3m86")
+expand_mode = 1

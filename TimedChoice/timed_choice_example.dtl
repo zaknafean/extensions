@@ -1,0 +1,9 @@
+test for timed choices!
+[timed_choice time_limit="15.0" default_choice="2.0"]
+- a - First choice
+	The first choice was picked
+- b - Default choice
+	The second and default choice was picked
+- c - Third choice
+	The third choice was picked
+Example timeline over!

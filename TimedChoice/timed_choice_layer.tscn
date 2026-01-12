@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://c37xo0ty8vcjn"]
+
+[ext_resource type="Script" uid="uid://bunm8h1cgc102" path="res://addons/dialogic_additions/TimedChoice/timed_choice_layer.gd" id="1_77kve"]
+
+[node name="TimedChoiceLayer" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_77kve")
+visual_progress_scene = "uid://d4iysoxy1xwlu"
+
+[node name="ChoiceTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4iysoxy1xwlu"]
+
+[ext_resource type="Texture2D" uid="uid://bikty4r43kw4q" path="res://addons/dialogic_additions/TimedChoice/ExampleTimerBarScenes/CircularProgressBar.png" id="1_l2xee"]
+[ext_resource type="Script" uid="uid://dacmgh2hilrpg" path="res://addons/dialogic_additions/TimedChoice/ExampleTimerBarScenes/timed_circlebar.gd" id="2_ibpdl"]
+
+[node name="TimedCirclebar" type="TextureProgressBar"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -150.0
+offset_right = 150.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+fill_mode = 4
+texture_under = ExtResource("1_l2xee")
+texture_progress = ExtResource("1_l2xee")
+tint_under = Color(0, 0, 0, 1)
+script = ExtResource("2_ibpdl")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -204.5
+offset_right = 23.0
+offset_bottom = -149.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 1
